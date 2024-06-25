@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #333; /* Change text color to a darker shade of gray */
+}
+
+body {
+    background: #f2f2f2;
+    color: #333; /* Change text color to match the background */
+}
+/* Center the navbar items horizontally */
+nav ul {
+    list-style: none;
+    position: relative;
+    text-align: center; /* Center the items horizontally */
+    align-items: center;
+}
+
+/* Style the navigation buttons and set hover colors */
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #333; /* Text color for buttons */
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 20px;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #eee; /* Light gray hover color for buttons */
+}
+
+/* Style the dropdown menu items */
+nav ul ul {
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    background-color: #fff; /* Set background color for dropdown menu */
+}
+
+nav ul ul li {
+    position: relative;
+    width: 200px;
+    display: block;
+    border-bottom: 1px solid #ccc; /* Border color for dropdown items */
+}
+
+/* Set gray hover color for dropdown items */
+nav ul ul li:hover {
+    background-color: #ccc; /* Gray hover color for dropdown items */
+}
+
+
+.range-input {
+    background: #eee; /* Change the background color to a lighter shade of gray */
+    -webkit-appearance: none;
+    height: 2px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #333; /* Change thumb color to a darker shade of gray */
+    cursor: pointer;
+}
+
+.range-input::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #333; /* Change thumb color to a darker shade of gray */
+    cursor: pointer;
+}
